@@ -1,5 +1,6 @@
 <script>
   import data from './lib/movies';
+  import Navbar from './lib/components/Navbar.svelte';
 
   let likeCount = 0;
   
@@ -12,6 +13,7 @@
   let selectedMovie = 0;
 </script>
 
+<Navbar />
 <main class="container">
   <h1>영화정보</h1>
   {#each data as movie, i}
