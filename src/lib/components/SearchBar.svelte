@@ -1,9 +1,9 @@
 <script>
   export let data = [];
   export let data_temp = [];
+  export let alertText = "";
 
   let inputText = "";
-  let alertText = "";
 
   $: if (inputText.length > 16)  {
     alertText = "입력한도 초과";

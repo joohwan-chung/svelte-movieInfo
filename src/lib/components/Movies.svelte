@@ -20,12 +20,12 @@
         <p>개봉: {movie.year}</p>
         <p>장르: {movie.category}</p>
         <button 
-          on:click={() => handleLike(i)}
-        >좋아요 {data_temp[i].likeCount}</button>
+          on:click={() => handleLike(movie.id)}
+        >좋아요 {movie.likeCount}</button>
         <button 
           on:click={() => {
             isModal = true;
-            handleMovieNumber(i)
+            handleMovieNumber(movie.id)
             console.log('selectedMovie : ', data[i])
           }}
           class="btn btn-primary"
